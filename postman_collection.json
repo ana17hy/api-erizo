@@ -17,9 +17,9 @@
           "raw": "{\n  \"name\": \"Spike\",\n  \"color\": \"marrón\",\n  \"age\": 2,\n  \"favorite_food\": \"manzanas\"\n}"
         },
         "url": {
-          "raw": "http://localhost:8000/hedgehogs",
+          "raw": "http://localhost:8001/hedgehogs",
           "host": ["localhost"],
-          "port": "8000",
+          "port": "8001",
           "path": ["hedgehogs"]
         }
       }
@@ -29,9 +29,9 @@
       "request": {
         "method": "GET",
         "url": {
-          "raw": "http://localhost:8000/hedgehogs",
+          "raw": "http://localhost:8001/hedgehogs",
           "host": ["localhost"],
-          "port": "8000",
+          "port": "8001",
           "path": ["hedgehogs"]
         }
       }
@@ -41,9 +41,9 @@
       "request": {
         "method": "GET",
         "url": {
-          "raw": "http://localhost:8000/hedgehog/1",
+          "raw": "http://localhost:8001/hedgehog/1",
           "host": ["localhost"],
-          "port": "8000",
+          "port": "8001",
           "path": ["hedgehog", "1"]
         }
       }
@@ -60,7 +60,7 @@
           "raw": "{\n  \"name\": \"Luna\",\n  \"color\": \"blanco\",\n  \"age\": 3,\n  \"favorite_food\": \"gusanos\"\n}"
         },
         "url": {
-          "raw": "http://localhost:8000/hedgehog/1",
+          "raw": "http://localhost:/hedgehog/1",
           "host": ["localhost"],
           "port": "8000",
           "path": ["hedgehog", "1"]
