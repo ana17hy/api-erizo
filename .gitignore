@@ -1,0 +1,25 @@
+# Dependencias
+/node_modules
+
+# Node modules
+node_modules/
+
+# Archivos de entorno
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Base de datos SQLite
+*.db
+*.sqlite
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Salidas de build (si luego usas TS o bundlers)
+/dist
+/build
