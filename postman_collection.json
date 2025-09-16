@@ -1,0 +1,83 @@
+{
+  "info": {
+    "_postman_id": "hedgehogs-collection-1234",
+    "name": "api-hedgehogs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear Erizo",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Spike\",\n  \"color\": \"marrón\",\n  \"age\": 2,\n  \"favorite_food\": \"manzanas\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/hedgehogs",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["hedgehogs"]
+        }
+      }
+    },
+    {
+      "name": "Leer todos los erizos",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/hedgehogs",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["hedgehogs"]
+        }
+      }
+    },
+    {
+      "name": "Leer 1 erizo",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/hedgehog/1",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["hedgehog", "1"]
+        }
+      }
+    },
+    {
+      "name": "Modificar Erizo",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Luna\",\n  \"color\": \"blanco\",\n  \"age\": 3,\n  \"favorite_food\": \"gusanos\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/hedgehog/1",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["hedgehog", "1"]
+        }
+      }
+    },
+    {
+      "name": "Eliminar Erizo",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8000/hedgehog/1",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["hedgehog", "1"]
+        }
+      }
+    }
+  ]
+}
